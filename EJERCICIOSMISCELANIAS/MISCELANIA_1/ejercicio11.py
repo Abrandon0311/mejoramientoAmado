@@ -1,12 +1,15 @@
 #11- Hallar el factorial de los numeros de una lista y guradarlos en otro lista.
 #Utilice numeros entre 2 y 15 para llenar la lista
 
+#define una función factorial(n) que calcula el factorial de un número dado utilizando una recursión simple
 def factorial(n):
     if n == 0 or n == 1:
         return 1
     else:
         return n * factorial(n - 1)
 
+#la función calcular_factoriales(lista_numeros) toma una lista de números y devuelve una nueva
+#lista con los factoriales de aquellos números que están entre 2 y 15 (inclusive).
 def calcular_factoriales(lista_numeros):
     lista_factoriales = []
     for num in lista_numeros:
