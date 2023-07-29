@@ -12,8 +12,12 @@ def suma_divisores(numero):
             suma += i
     return suma
 
+#Esta función toma un número como entrada y utiliza la función suma_divisores(numero) 
+#para determinar si el número es perfecto o no
 def es_perfecto(numero):
     return numero == suma_divisores(numero)
+#Retorna True si la suma de los divisores es igual al número original; 
+#de lo contrario, retorna False.
 
 # Prueba de la función
 num = int(input("Ingrese un número para verificar si es perfecto: "))
