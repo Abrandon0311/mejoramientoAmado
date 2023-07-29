@@ -28,5 +28,7 @@ def main():
     except ValueError:
         print("Error: Ingrese solo números enteros.")
 
+#La cláusula if __name__ == "__main__": asegura que la función main se ejecute solo si
+#el script se ejecuta directamente y no si se importa como un módulo.
 if __name__ == "__main__":
     main()
