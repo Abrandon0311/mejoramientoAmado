@@ -7,7 +7,7 @@
 #f.	Cuál de los dos tiene mayor cantidad de pares
 #g.	Cuál de los dos tiene mayor cantidad de impares
 
-import random
+import random #importar el módulo random para generar números aleatorios
 
 def generar_arreglo(n):
     return [random.randint(1, 100) for _ in range(n)]

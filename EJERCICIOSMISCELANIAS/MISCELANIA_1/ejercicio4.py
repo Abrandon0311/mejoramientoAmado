@@ -4,15 +4,19 @@
 
 import random
 
-def generar_numero(min_val, max_val):
-    return random.randint(min_val, max_val)
+def generar_numero(min_val, max_val): #La función generar_numero toma un valor mínimo y máximo como argumentos.
+    return random.randint(min_val, max_val) #devuelve un número aleatorio entre esos valores utilizando la función random.randint.
 
-def verificar_repetido(arreglo, numero):
+#La función verificar_repetido toma un arreglo y un número como argumentos y devuelve True
+#si el número ya existe en el arreglo, o False en caso contrario.
+def verificar_repetido(arreglo, numero): 
     return numero in arreglo
 
+#La función llenar_arreglo toma la cantidad de elementos n, el valor mínimo min_val 
+#y el valor máximo max_val como argumentos.
 def llenar_arreglo(n, min_val, max_val):
     arreglo = []
-    while len(arreglo) < n:
+    while len(arreglo) < n: #se crea  un bucle while para generar números aleatorios y llenar el arreglo hasta que alcance la cantidad de elementos n
         numero = generar_numero(min_val, max_val)
         if verificar_repetido(arreglo, numero):
             print(f"El número {numero} ya está en el arreglo.")

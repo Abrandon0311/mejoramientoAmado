@@ -14,7 +14,9 @@
 import random
 from collections import Counter
 
-def generar_arreglo(n):
+#todas las funciones reciben argumentos y retornan valores
+
+def generar_arreglo(n): #La función generar_arreglo(n) crea y devuelve el arreglo aleatorio
     return [random.randint(1, 100) for _ in range(n)]
 
 def imprimir_arreglo(arreglo):
@@ -60,7 +62,7 @@ def buscar_numero(arreglo, numero):
 def main():
     print("Bienvenido al programa de generación de arreglos aleatorios.")
     n = int(input("Ingrese el tamaño del arreglo (n): "))
-
+#Cada función realiza su operación y retorna el resultado que se imprime directamente en el menú
     arreglo = generar_arreglo(n)
 
     while True:
@@ -110,6 +112,7 @@ def main():
         else:
             print("Opción no válida. Por favor, ingrese una opción válida.")
 
+#La cláusula if __name__ == "__main__": asegura que la función main se ejecute solo si
+#el script se ejecuta directamente y no si se importa como un módulo.
 if __name__ == "__main__":
     main()
-
