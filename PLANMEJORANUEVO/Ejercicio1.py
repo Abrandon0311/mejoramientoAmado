@@ -5,6 +5,7 @@ class NumeroRacional:
         self.numerador = numerador
         self.denominador = denominador
 
+#devuelve una cadena que contiene el numerador y el denominador de un objeto que representa una fracción.
     def __str__(self):
         return f"{self.numerador}/{self.denominador}"
 

@@ -1,6 +1,7 @@
 #Multiplicación de dos números racionales:
 
 from Ejercicio1 import NumeroRacional
+
 def multiplicacion_racionales(racional1, racional2):
     numerador = racional1.numerador * racional2.numerador
     denominador = racional1.denominador * racional2.denominador
